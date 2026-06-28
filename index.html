@@ -444,15 +444,200 @@ I enjoy creating cricket-related content and exploring the digital world every d
 
 <div class="card" style="text-align:center;">
 
-<h2>💬 Review & Feedback</h2>
+<!-- PREMIUM COLORFUL REVIEW & FEEDBACK SECTION -->
 
-<input type="text" placeholder="Your Name">
+<section class="reviews-section">
+    <h2>🌟 Reviews & Feedback 🌟</h2>
+    <p class="subtitle">What people say about Priyansh Sharma</p>
 
-<textarea placeholder="Write your review here..."></textarea>
+    <div class="reviews-container">
 
-<button type="submit">
-⭐ Submit Review
-</button>
+        <div class="review-card">
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <p>"Amazing cricket content and fantastic editing skills!"</p>
+            <h4>👤Ritik Sharma</h4>
+        </div>
+
+        <div class="review-card">
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <p>"One of the best cricket shorts creators. Keep growing!"</p>
+            <h4>👤 Aman Verma</h4>
+        </div>
+
+        <div class="review-card">
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <p>"Professional website with premium design."</p>
+            <h4>👤 Aryan Gupta</h4>
+        </div>
+
+    </div>
+
+    <div class="feedback-box">
+        <h3>💬 Submit Your Feedback</h3>
+
+        <input type="text" placeholder="👤 Your Name">
+
+        <select>
+            <option>⭐⭐⭐⭐⭐ Excellent</option>
+            <option>⭐⭐⭐⭐ Very Good</option>
+            <option>⭐⭐⭐ Good</option>
+            <option>⭐⭐ Average</option>
+            <option>⭐ Poor</option>
+        </select>
+
+        <textarea rows="5" placeholder="✍️ Write your feedback..."></textarea>
+
+        <button onclick="showMessage()">🚀 Submit Review</button>
+
+        <p id="msg"></p>
+    </div>
+</section>
+
+<style>
+
+.reviews-section{
+padding:80px 20px;
+background:linear-gradient(135deg,#0f172a,#1e293b,#312e81);
+text-align:center;
+color:white;
+}
+
+.reviews-section h2{
+font-size:48px;
+background:linear-gradient(90deg,#00e5ff,#00ff95,#ffd700);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+margin-bottom:10px;
+}
+
+.subtitle{
+font-size:18px;
+color:#cbd5e1;
+margin-bottom:50px;
+}
+
+.reviews-container{
+display:flex;
+justify-content:center;
+gap:25px;
+flex-wrap:wrap;
+margin-bottom:60px;
+}
+
+.review-card{
+width:320px;
+padding:25px;
+border-radius:25px;
+background:rgba(255,255,255,0.08);
+backdrop-filter:blur(15px);
+border:1px solid rgba(255,255,255,0.15);
+transition:.4s;
+box-shadow:0 0 20px rgba(0,229,255,.15);
+}
+
+.review-card:hover{
+transform:translateY(-10px);
+box-shadow:0 0 30px #00e5ff;
+}
+
+.stars{
+font-size:22px;
+margin-bottom:15px;
+}
+
+.review-card p{
+line-height:1.8;
+color:#e2e8f0;
+}
+
+.review-card h4{
+margin-top:15px;
+color:#00e5ff;
+}
+
+.feedback-box{
+max-width:700px;
+margin:auto;
+padding:35px;
+border-radius:30px;
+background:rgba(255,255,255,0.08);
+backdrop-filter:blur(20px);
+border:1px solid rgba(255,255,255,0.15);
+box-shadow:0 0 30px rgba(0,255,149,.2);
+}
+
+.feedback-box h3{
+font-size:30px;
+margin-bottom:25px;
+color:#00ff95;
+}
+
+.feedback-box input,
+.feedback-box select,
+.feedback-box textarea{
+width:100%;
+padding:15px;
+margin:12px 0;
+border:none;
+outline:none;
+border-radius:15px;
+background:rgba(255,255,255,0.12);
+color:white;
+font-size:16px;
+}
+
+.feedback-box textarea{
+resize:none;
+}
+
+.feedback-box button{
+padding:15px 40px;
+border:none;
+border-radius:50px;
+font-size:18px;
+font-weight:bold;
+cursor:pointer;
+background:linear-gradient(
+90deg,
+#00e5ff,
+#00ff95,
+#ffd700
+);
+color:#000;
+transition:.4s;
+}
+
+.feedback-box button:hover{
+transform:scale(1.08);
+box-shadow:0 0 35px #00ff95;
+}
+
+#msg{
+margin-top:15px;
+font-size:18px;
+font-weight:bold;
+color:#00ff95;
+}
+
+@media(max-width:768px){
+.reviews-section h2{
+font-size:34px;
+}
+
+.review-card{
+width:100%;
+max-width:350px;
+}
+}
+
+</style>
+
+<script>
+function showMessage(){
+document.getElementById("msg").innerHTML =
+"✅ Thank You! Your review has been submitted successfully.";
+}
+</script>
 
 <p style="margin-top:20px;">
 Thank you for visiting my website ❤️
@@ -474,7 +659,7 @@ My goal is to grow my online presence,
 create amazing cricket content,
 learn advanced web development,
 and inspire people through creativity,
-consistency and hard work.
+consistency and hard work Or Kya karu bata do 💀.
 
 </p>
 
