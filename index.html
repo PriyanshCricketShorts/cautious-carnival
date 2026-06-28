@@ -1,188 +1,267 @@
-<section id="about">
-  <h2>👑🏏 About Priyansh Sharma 🏏👑</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <div class="card">
+<title>Priyansh Sharma | Official Website</title>
 
-    <h3>🌟 Welcome To My Digital World 🌟</h3>
+<meta name="description" content="Official Website of Priyansh Sharma. Cricket Lover, Content Creator, Video Editor and Future Developer from Hapur.">
+<meta name="keywords" content="Priyansh Sharma, Priyansh Cricket Shorts, Cricket, YouTube, Hapur, Website, Video Editing">
+<meta name="author" content="Priyansh Sharma">
+<meta name="robots" content="index,follow">
+<meta name="theme-color" content="#ff0000">
 
-    <p>
-      ✨ Hello Everyone! ✨<br><br>
+<style>
 
-      🙏 Welcome to the official website of <b>Priyansh Sharma</b>.
-      I am from <b>📍 Hapur, Uttar Pradesh, India 🇮🇳</b> and I am passionate
-      about <b>🏏 Cricket, 🎬 Content Creation, ✂️ Video Editing and 💻 Technology</b>.
-      <br><br>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+scroll-behavior:smooth;
+}
 
-      This website represents my journey, goals, achievements, interests and
-      future dreams. It is a place where visitors can learn more about me and
-      explore my work as a cricket content creator.
-      <br><br>
+body{
+background:#0f172a;
+color:white;
+overflow-x:hidden;
+}
 
-      ❤️ Every visitor who visits this website becomes a part of my journey.
-    </p>
+::-webkit-scrollbar{
+width:8px;
+}
 
-    <hr>
+::-webkit-scrollbar-thumb{
+background:#ff0000;
+border-radius:20px;
+}
 
-    <h3>👤 Personal Information</h3>
+header{
+min-height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+background:
+linear-gradient(rgba(0,0,0,.5),
+rgba(0,0,0,.7)),
+url("profile.jpg");
+background-size:cover;
+background-position:center;
+}
 
-    <p>
-      👑 Full Name: <b>Priyansh Sharma</b><br>
-      📍 Location: <b>Hapur, Uttar Pradesh, India 🇮🇳</b><br>
-      🎓 Education: <b>Class 12 Student</b><br>
-      🏏 Passion: <b>Cricket & Sports</b><br>
-      🎬 Skills: <b>Video Editing & Content Creation</b><br>
-      💻 Interests: <b>Technology, Websites & Digital Media</b><br>
-      🚀 Goal: <b>Become a Successful Digital Creator</b>
-    </p>
+.profile-img{
+width:220px;
+height:220px;
+object-fit:cover;
+border-radius:50%;
+border:5px solid white;
+box-shadow:0 0 40px red;
+animation:float 3s infinite ease-in-out;
+}
 
-    <hr>
+@keyframes float{
+0%{transform:translateY(0);}
+50%{transform:translateY(-12px);}
+100%{transform:translateY(0);}
+}
 
-    <h3>🏏 My Cricket Journey</h3>
+header h1{
+font-size:60px;
+margin-top:20px;
+text-shadow:0 0 20px red;
+}
 
-    <p>
-      Cricket is more than just a sport for me. It is a passion, an inspiration
-      and a source of motivation. Since childhood, I have enjoyed watching
-      exciting matches, learning about great players and exploring different
-      aspects of the game.
-      <br><br>
+header p{
+font-size:22px;
+margin-top:10px;
+max-width:700px;
+}
 
-      🏏 Cricket teaches discipline.<br>
-      🏏 Cricket teaches teamwork.<br>
-      🏏 Cricket teaches patience.<br>
-      🏏 Cricket teaches consistency.<br>
-      🏏 Cricket teaches determination.
-      <br><br>
+.btn{
+display:inline-block;
+padding:14px 28px;
+margin:10px;
+background:#ff0000;
+color:white;
+text-decoration:none;
+border-radius:10px;
+transition:.4s;
+font-weight:bold;
+}
 
-      Through my content, I aim to share exciting cricket moments and connect
-      with cricket fans around the world.
-    </p>
+.btn:hover{
+transform:translateY(-5px);
+box-shadow:0 0 20px red;
+}
 
-    <hr>
+section{
+padding:80px 20px;
+max-width:1200px;
+margin:auto;
+}
 
-    <h3>🎬 Content Creation Journey</h3>
+.card{
+background:#1e293b;
+padding:30px;
+border-radius:20px;
+margin-bottom:25px;
+transition:.4s;
+}
 
-    <p>
-      Content creation allows me to express my creativity and share my interests
-      with others. Every video I create helps me improve my editing skills,
-      creativity and understanding of digital platforms.
-      <br><br>
+.card:hover{
+transform:translateY(-8px);
+}
 
-      🌟 Skills I am improving every day:
-      <br><br>
+h2{
+color:#60a5fa;
+margin-bottom:15px;
+font-size:35px;
+}
 
-      🎥 Video Editing<br>
-      🖼️ Thumbnail Designing<br>
-      📱 Social Media Content Creation<br>
-      🎨 Creative Design<br>
-      💻 Website Development<br>
-      📺 YouTube Content Management
-      <br><br>
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
 
-      I believe that continuous learning is the key to growth and success.
-    </p>
+.gallery img{
+width:100%;
+height:250px;
+object-fit:cover;
+border-radius:15px;
+}
 
-    <hr>
+.stats{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+}
 
-    <h3>🎓 Education & Learning</h3>
+.stat{
+background:#1e293b;
+padding:30px;
+text-align:center;
+border-radius:15px;
+}
 
-    <p>
-      Education plays an important role in my life.
-      Along with my interest in cricket and content creation,
-      I also focus on improving my knowledge and learning new skills.
-      <br><br>
+.stat h3{
+font-size:40px;
+margin-bottom:10px;
+}
 
-      📚 Learning Goals:
-      <br><br>
+input,textarea{
+width:100%;
+padding:15px;
+margin-top:10px;
+border:none;
+border-radius:10px;
+}
 
-      ✔️ Continue Higher Education<br>
-      ✔️ Improve Technical Skills<br>
-      ✔️ Learn Advanced Web Development<br>
-      ✔️ Gain Real-World Experience<br>
-      ✔️ Build Creative Projects
-      <br><br>
+button{
+padding:14px 25px;
+background:red;
+border:none;
+color:white;
+border-radius:10px;
+margin-top:10px;
+cursor:pointer;
+}
 
-      I believe that every new skill creates new opportunities.
-    </p>
+footer{
+background:black;
+text-align:center;
+padding:40px;
+}
 
-    <hr>
+@media(max-width:768px){
 
-    <h3>🚀 My Future Goals</h3>
+header h1{
+font-size:38px;
+}
 
-    <p>
-      Every successful journey begins with a dream.
-      These are some of my future goals:
-      <br><br>
+.profile-img{
+width:170px;
+height:170px;
+}
 
-      🏏 Build a strong cricket community<br>
-      📺 Grow my YouTube channel<br>
-      🎬 Become a professional video editor<br>
-      💻 Learn advanced technology skills<br>
-      🌍 Connect with people worldwide<br>
-      🌟 Build a powerful personal brand
-      <br><br>
+header p{
+font-size:18px;
+}
 
-      Success takes time, patience and consistency.
-      I am committed to learning and improving every day.
-    </p>
+}
 
-    <hr>
+</style>
+</head>
 
-    <h3>⭐ My Values</h3>
+<body>
 
-    <p>
-      ❤️ Honesty<br>
-      💪 Hard Work<br>
-      📚 Continuous Learning<br>
-      🤝 Respect For Everyone<br>
-      🚀 Self Improvement<br>
-      🌟 Positive Thinking
-      <br><br>
+<header>
 
-      These values help me stay motivated and focused on my goals.
-    </p>
+<img src="profile.jpg" class="profile-img">
 
-    <hr>
+<h1>🏏 PRIYANSH SHARMA</h1>
 
-    <h3>🌐 Purpose Of This Website</h3>
+<p>
+Cricket Lover • Content Creator • Student • Future Developer • YouTube Creator
+</p>
 
-    <p>
-      This website was created to:
-      <br><br>
+<div>
 
-      🏏 Share my cricket interests<br>
-      🎬 Showcase my creative work<br>
-      📚 Document my journey<br>
-      🌟 Connect with visitors<br>
-      💻 Practice web development
-      <br><br>
+<a href="#" class="btn">▶ YouTube</a>
+<a href="#" class="btn">📷 Instagram</a>
+<a href="#" class="btn">📢 Telegram</a>
+<a href="#" class="btn">💰 FamPay</a>
 
-      It serves as a platform where people can learn more about me,
-      my interests and my future ambitions.
-    </p>
+</div>
 
-    <hr>
+</header>
 
-    <h3>🙏 Thank You For Visiting</h3>
+<section>
 
-    <p>
-      🌟 Thank you for visiting my website.
-      Your support and encouragement inspire me to keep learning,
-      creating and improving every day.
-      <br><br>
+<div class="card">
 
-      ❤️ Stay Connected<br>
-      🚀 Keep Learning<br>
-      🌟 Keep Growing<br>
-      🏏 Keep Supporting
-      <br><br>
+<h2>👋 About Me</h2>
 
-      👑 PRIYANSH SHARMA 👑<br>
-      📍 Hapur, Uttar Pradesh, India 🇮🇳<br>
-      🏏 Cricket Lover | 🎬 Creator | 💻 Learner
-      <br><br>
+<p>
 
-      ✨ Dream Big • Work Hard • Never Give Up ✨
-    </p>
+Hello and welcome to my official website.
 
-  </div>
+My name is Priyansh Sharma and I am from Hapur, Uttar Pradesh.
+
+I am passionate about cricket, content creation, website development, video editing and technology.
+
+This website is dedicated to my journey, projects, goals, achievements and future plans.
+
+I enjoy creating cricket-related content and exploring the digital world every day.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>🎯 My Goals</h2>
+
+<p>
+
+✅ Build a successful online presence
+
+✅ Grow my cricket community
+
+✅ Improve editing skills
+
+✅ Learn web development
+
+✅ Create useful projects
+
+✅ Inspire others through consistency
+
+</p>
+
+</div>
+
 </section>
