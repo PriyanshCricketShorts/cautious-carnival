@@ -1,10 +1,18 @@
+
+<!-- =========================
+PIXELORA PREMIUM WEBSITE
+Owner: Priyansh Sharma
+Replace logo.png with your uploaded Pixelora logo
+========================= -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pixelora | AI, Editing & Technology Hub</title>
 
-<title>👑 Priyansh Sharma | Official Website</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
 <style>
 
@@ -12,151 +20,485 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Segoe UI;
+font-family:'Poppins',sans-serif;
 scroll-behavior:smooth;
 }
 
 body{
-background:linear-gradient(135deg,#0f172a,#3b0a45,#ff4da6);
+background:#05010d;
 color:white;
 overflow-x:hidden;
 }
 
-/* NAV */
+::-webkit-scrollbar{
+width:8px;
+}
+
+::-webkit-scrollbar-thumb{
+background:#8b3dff;
+border-radius:10px;
+}
+
 nav{
 position:fixed;
 top:0;
+left:0;
 width:100%;
-padding:12px;
-background:rgba(0,0,0,0.6);
-text-align:center;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+background:rgba(0,0,0,.4);
+backdrop-filter:blur(15px);
 z-index:1000;
 }
 
-nav a{
+.logo-text{
+font-size:28px;
+font-weight:700;
+color:#b987ff;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:25px;
+}
+
+nav ul li a{
 color:white;
 text-decoration:none;
-margin:8px;
-font-weight:bold;
-font-size:13px;
+font-weight:500;
+transition:.3s;
 }
 
-/* HERO */
+nav ul li a:hover{
+color:#b987ff;
+}
+
 .hero{
-padding:130px 20px 60px;
-text-align:center;
-}
-
-.logo{
-width:150px;
-height:150px;
-margin:auto;
-border-radius:50%;
+height:100vh;
 display:flex;
-align-items:center;
 justify-content:center;
-font-size:55px;
-font-weight:bold;
-background:linear-gradient(135deg,#ff4da6,#ff85c2);
-box-shadow:0 0 40px #ff4da6;
+align-items:center;
+text-align:center;
+flex-direction:column;
+padding:20px;
+background:
+linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1600&q=80');
+background-size:cover;
+background-position:center;
 }
 
-.hero h1{font-size:2.6rem;margin-top:20px;}
-.hero p{margin-top:10px;color:#ffe6f2;}
+.hero img{
+width:180px;
+height:180px;
+border-radius:50%;
+box-shadow:0 0 50px #8b3dff;
+margin-bottom:30px;
+}
 
-/* SECTION */
+.hero h1{
+font-size:75px;
+color:#c99cff;
+}
+
+.hero p{
+max-width:900px;
+margin-top:20px;
+font-size:18px;
+line-height:1.8;
+}
+
+.btn{
+display:inline-block;
+margin-top:30px;
+padding:15px 35px;
+background:#8b3dff;
+color:white;
+text-decoration:none;
+border-radius:50px;
+font-weight:600;
+transition:.4s;
+}
+
+.btn:hover{
+transform:translateY(-5px);
+box-shadow:0 0 25px #8b3dff;
+}
+
 section{
-padding:80px 20px;
+padding:100px 10%;
+}
+
+.section-title{
+font-size:42px;
+text-align:center;
+margin-bottom:50px;
+color:#c99cff;
+}
+
+.about{
+text-align:center;
+font-size:18px;
+line-height:2;
 max-width:1100px;
 margin:auto;
 }
 
-.title{
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
+.card{
+background:#111;
+padding:30px;
+border-radius:20px;
+border:1px solid rgba(255,255,255,.08);
+transition:.4s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+box-shadow:0 0 30px rgba(139,61,255,.4);
+}
+
+.card h3{
+color:#c99cff;
+margin-bottom:15px;
+}
+
+.stats{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:25px;
 text-align:center;
-font-size:2rem;
-color:#ffd1ea;
+}
+
+.stat{
+background:#111;
+padding:30px;
+border-radius:20px;
+}
+
+.stat h2{
+font-size:50px;
+color:#c99cff;
+}
+
+.owner{
+background:#111;
+padding:50px;
+border-radius:25px;
+text-align:center;
+}
+
+.owner h2{
+color:#c99cff;
 margin-bottom:20px;
 }
 
-/* CARD */
-.card{
-background:rgba(255,255,255,0.08);
-padding:25px;
-border-radius:20px;
-backdrop-filter:blur(10px);
-line-height:1.8;
-}
-
-/* SOCIAL GRID */
-.social-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-gap:15px;
-margin-top:20px;
-}
-
-.social-grid a{
-padding:15px;
-border-radius:15px;
-text-decoration:none;
-color:white;
-font-weight:bold;
+.social{
 text-align:center;
-display:block;
 }
 
-.yt{background:#ff0000;}
-.insta{background:#d62976;}
-.tg{background:#0088cc;}
-.wa{background:#25D366;}
-.fam{background:#00c853;}
-.email{background:#ff512f;}
-.dev{background:#6a5acd;}
-.web{background:#00bcd4;}
-
-/* BUTTON */
-.btn{
+.social a{
 display:inline-block;
+margin:10px;
 padding:14px 30px;
-border-radius:40px;
-background:linear-gradient(135deg,#ff4da6,#ff85c2);
+background:#8b3dff;
+border-radius:50px;
 color:white;
 text-decoration:none;
-font-weight:bold;
-margin-top:10px;
-box-shadow:0 10px 25px rgba(255,77,166,0.4);
 }
 
-/* FOOTER */
 footer{
-text-align:center;
+background:#080808;
 padding:40px;
-background:rgba(0,0,0,0.6);
-margin-top:40px;
+text-align:center;
+border-top:1px solid rgba(255,255,255,.08);
 }
 
 </style>
 </head>
-
 <body>
 
-<!-- NAV -->
 <nav>
-<a href="#home">Home</a>
-<a href="#about">About</a>
-<a href="#channel">Channel</a>
-<a href="#skills">Skills</a>
-<a href="#social">Social</a>
-<a href="#contact">Contact</a>
+<div class="logo-text">PIXELORA</div>
+
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#founder">Founder</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
 </nav>
 
-<!-- HOME -->
-<section id="home" class="hero">
-<div class="logo">PS</div>
-<h1>👑 Priyansh Sharma</h1>
-<p>🏏 Cricket Creator • 🎬 Video Editor • 💻 Web Developer • 🎓 Student</p>
+<section class="hero">
+
+<!-- Replace logo.png with your uploaded logo -->
+<img src="logo.png" alt="Pixelora Logo">
+
+<h1>PIXELORA</h1>
+
+<p>
+The Future of Artificial Intelligence, Editing Resources,
+Creative Design, Digital Innovation and Modern Technology.
+A premium destination built for creators, editors,
+developers and technology enthusiasts around the world.
+</p>
+
+<a href="#about" class="btn">Explore Pixelora</a>
+
 </section>
 
+<section id="about">
+
+<h2 class="section-title">About Pixelora</h2>
+
+<div class="about">
+
+<p>
+Pixelora is a modern technology-focused platform dedicated to helping creators,
+editors, gamers, developers and digital innovators access powerful resources,
+advanced tools and premium experiences.
+</p>
+
+<br>
+
+<p>
+Our goal is to simplify technology while maximizing creativity.
+Whether you're looking for AI tools, editing resources,
+digital assets, technology updates or productivity solutions,
+Pixelora aims to provide everything in one premium ecosystem.
+</p>
+
+<br>
+
+<p>
+We believe that the future belongs to creators.
+That's why Pixelora continues to develop innovative solutions
+that help people turn their ideas into reality faster,
+smarter and more efficiently.
+</p>
+
+</div>
+
+</section>
+
+<section id="services">
+
+<h2 class="section-title">Our Services</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Artificial Intelligence</h3>
+<p>
+Smart AI-powered tools that improve productivity,
+content generation and creative workflows.
+</p>
+</div>
+
+<div class="card">
+<h3>Professional Editing</h3>
+<p>
+Editing resources, presets, templates,
+transitions and premium digital assets.
+</p>
+</div>
+
+<div class="card">
+<h3>Technology Updates</h3>
+<p>
+Latest information from the world of technology,
+software and innovation.
+</p>
+</div>
+
+<div class="card">
+<h3>Creative Design</h3>
+<p>
+Graphics, branding solutions,
+UI concepts and visual inspiration.
+</p>
+</div>
+
+<div class="card">
+<h3>Gaming Resources</h3>
+<p>
+Gaming content, optimization guides,
+tips and premium resources.
+</p>
+</div>
+
+<div class="card">
+<h3>Digital Innovation</h3>
+<p>
+Future-ready tools and solutions
+for the next generation of creators.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="section-title">Why Choose Pixelora?</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Premium Quality</h3>
+<p>
+Every resource is selected with quality,
+performance and reliability in mind.
+</p>
+</div>
+
+<div class="card">
+<h3>Future Focused</h3>
+<p>
+We continuously adapt to emerging technologies
+and industry trends.
+</p>
+</div>
+
+<div class="card">
+<h3>Creator Friendly</h3>
+<p>
+Designed specifically for creators,
+editors and digital professionals.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="section-title">Pixelora Statistics</h2>
+
+<div class="stats">
+
+<div class="stat">
+<h2>24/7</h2>
+<p>Technology Updates</p>
+</div>
+
+<div class="stat">
+<h2>100%</h2>
+<p>Innovation Focused</p>
+</div>
+
+<div class="stat">
+<h2>AI</h2>
+<p>Powered Solutions</p>
+</div>
+
+<div class="stat">
+<h2>∞</h2>
+<p>Creative Possibilities</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="founder">
+
+<div class="owner">
+
+<h2>Founder & Owner</h2>
+
+<h1>Priyansh Sharma</h1>
+
+<br>
+
+<p>
+Priyansh Sharma is the founder and owner of Pixelora.
+His vision is to create a modern technology brand
+that combines creativity, artificial intelligence,
+digital innovation and advanced editing resources
+into one powerful platform.
+</p>
+
+<br>
+
+<p>
+Under his leadership, Pixelora continues to grow
+as a destination for creators, developers,
+technology enthusiasts and digital innovators.
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="section-title">Future Vision</h2>
+
+<div class="about">
+
+Pixelora aims to become a globally recognized technology platform,
+offering AI solutions, editing ecosystems, digital products,
+creator tools and innovative software that empower millions of users.
+
+Our roadmap includes advanced AI applications,
+premium creator resources, mobile applications,
+web platforms and next-generation digital experiences.
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2 class="section-title">Connect With Pixelora</h2>
+
+<div class="social">
+
+<a href="#">YouTube</a>
+<a href="#">Telegram</a>
+<a href="#">Instagram</a>
+<a href="#">WhatsApp</a>
+<a href="mailto:priyanshsharma7777@gmail.com">Email</a>
+
+</div>
+
+</section>
+
+<footer>
+
+<h2>PIXELORA</h2>
+
+<br>
+
+<p>
+AI • Editing • Technology • Innovation
+</p>
+
+<br>
+
+<p>
+© 2026 Pixelora. All Rights Reserved.
+</p>
+
+<p>
+Founded by Priyansh Sharma
+</p>
+
+</footer>
+
+</body>
+</html>
 <!-- ABOUT -->
 <section id="about">
 <h2 class="title">🙋 About Me</h2>
